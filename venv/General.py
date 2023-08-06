@@ -162,7 +162,7 @@ def down():
         for descarga in range(len(BBDD_concepts)):
 
             if BBDD_concepts.iloc[descarga]["BBDD"]=="ESIOS":
-                Descargas.descargaESIOS("c2951aa2fff559933828ba277d4459e1da579e89dd09aa6a8659b84846281cf4",
+                Descargas.descargaESIOS("Introducir token personal",
                                      BBDD_concepts.iloc[descarga]["BBDD"],
                                      BBDD_concepts.iloc[descarga]["Tabla"],
                                      int(BBDD_concepts.iloc[descarga]["ID"]),
@@ -262,10 +262,6 @@ def descargas_window():
             Ventana_descargas.destroy()
             descargas_window()
             Add_descarga.destroy()
-
-
-
-
 
 
 
